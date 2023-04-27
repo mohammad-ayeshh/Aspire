@@ -1,17 +1,37 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    loops loopsClass = new loops();
+        System.out.println("Sum of even numbers from 0 to 100 is: " + loopsClass.sumNumbers("even", 100));
+        System.out.println("Sum of odd numbers from 0 to 100 is: " + loopsClass.sumNumbers("odd", 100));
+        System.out.println("Sum of odd numbers from 0 to 100 is: " + loopsClass.sumNumbers("divisor", 100 ,7));
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+        loopsClass.sumOfEvenFor(0,100);
+        loopsClass.sumOfEvenWhile(0,100);
+        loopsClass.sumOfEvenDoWhile(0,100);
+        loopsClass.sumOfOddFor(0,100);
+        loopsClass.sumOfOddWhile(0,100);
+        loopsClass.sumOfOddDoWhile(0,100);
+        loopsClass.sumOfDivisibleFor(0,100,7);
+        loopsClass.sumOfDivisibleWhile(0,100,7);
+        loopsClass.sumOfDivisibleDoWhile(0,100,7);
+
+//-------------------------------------------------------------------------------------------------
+
+        Recurtion recurtionClass = new Recurtion();
+
+        int sum = recurtionClass.calculateSum(1,3,true);
+        System.out.println("Sum of odd numbers from 0 to 3 is: " + sum);
+
+        int sum2 = recurtionClass.calculateSum(1,100);
+        System.out.println("Sum of numbers from 1 to 100 is: " + sum2);
+
+        int sum3 = recurtionClass.calculateSum(1,100,7);
+        System.out.println("Sum of numbers dividable by 7 from 1 to 100 is: " + sum3);
+
+
+
+
     }
 }
