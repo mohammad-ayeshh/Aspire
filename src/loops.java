@@ -57,7 +57,6 @@ public class loops {
         }
         return sum;
     }
-
     public static void sumOfEvenFor(int start, int end) {
 
         int sum = 0;
