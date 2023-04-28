@@ -30,8 +30,5 @@ public class Main {
         int sum3 = Recurtion.calculateSum(1,100,7);
         System.out.println("Sum of numbers dividable by 7 from 1 to 100 is: " + sum3);
 
-
-
-
     }
 }
