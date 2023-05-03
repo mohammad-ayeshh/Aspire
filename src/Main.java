@@ -29,6 +29,22 @@ public class Main {
 
         int sum3 = Recurtion.calculateSum(1,100,7);
         System.out.println("Sum of numbers dividable by 7 from 1 to 100 is: " + sum3);
+//---------------------------------------------------------------------------------------------------
+        int[] arr = { 5, 2, 9, 1, 3 };
+        int[] arr2 = null;
+        int[] arr3 ={} ;
+
+        System.out.println(ArrayOperations.getMin(arr2));
+        System.out.println(ArrayOperations.getMin(arr3));
+
+        System.out.println(ArrayOperations.getMin(arr));
+
+        System.out.println(ArrayOperations.getMax(arr));
+
+        System.out.println(ArrayOperations.getAverage(arr));
+
+        int[] sortedArr = ArrayOperations.getSortedArray(arr);
+        ArrayOperations.arrayPrint(sortedArr);
 
     }
 }
