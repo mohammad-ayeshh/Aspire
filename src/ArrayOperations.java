@@ -1,34 +1,43 @@
 public class ArrayOperations {
+    public static  boolean isNull(int[] arr){
+        return arr != null && arr.length != 0;
+    }
     public static int getMin(int[] arr) {
         //Method that returns the minimum value of integer array
-        int min = arr[0];
-        for (int num : arr) {
-            if (num < min) {
-                min = num;
+        if (isNull(arr)){
+
+            int min = arr[0];
+            for (int num : arr) {
+                if (num < min) {
+                    min = num;
+                }
             }
+            return min;
         }
-        return min;
+        return -99999;
     }
     public static int getMax(int[] arr) {
         //Method that returns the maximum value of integer array
+        if (isNull(arr)){
         int max = arr[0];
         for (int num : arr) {
             if (num > max) {
                 max = num;
             }
         }
-        return max;
+        return max;}
+        return -99999;
     }
     public static double getAverage(int[] arr) {
         //Method that returns the average of integer array values
         if (arr.length == 0) {
             return 0;
         }
-        int sum = 0;
+        double sum = 0;
         for (int num : arr) {
             sum += num;
         }
-        return (double) sum / arr.length;
+        return sum / arr.length;
     }
 
     public static int[] getSortedArray(int[] arr) {
